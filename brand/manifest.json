@@ -1,0 +1,106 @@
+{
+  "generatedFrom": "impossible-g-site",
+  "website": "https://impossibleg.org",
+  "organization": "https://github.com/impossibleG",
+  "organizationDescription": "Ready-made local AI infrastructure for embeddings, vision, voice, and inference.",
+  "motto": "It’s yours.",
+  "palette": {
+    "ink": "#0a0a0d",
+    "soft": "#14141a",
+    "paper": "#f4f0e8",
+    "muted": "#a7a6aa",
+    "coral": "#ff6855",
+    "cyan": "#15dbe1",
+    "violet": "#6f37ff"
+  },
+  "services": [
+    {
+      "slug": "embedding",
+      "repository": "impossible-embeddings",
+      "localDirectory": "impossible-embedding",
+      "name": "Embedding",
+      "accent": "#15dbe1",
+      "kicker": "LANGUAGE → MEANING",
+      "statement": "Turn language into meaning software can navigate.",
+      "description": "Ready-made local infrastructure for generating embeddings with open models.",
+      "topics": [
+        "local-ai",
+        "self-hosted",
+        "open-models",
+        "ai-infrastructure",
+        "privacy",
+        "rust",
+        "embeddings",
+        "vector-search",
+        "semantic-search",
+        "onnx"
+      ]
+    },
+    {
+      "slug": "ocr",
+      "repository": "impossible-ocr",
+      "localDirectory": "impossible-ocr",
+      "name": "OCR",
+      "accent": "#ff6855",
+      "kicker": "PIXELS → INFORMATION",
+      "statement": "Make images readable to software.",
+      "description": "Ready-made local infrastructure for turning images into structured text.",
+      "topics": [
+        "local-ai",
+        "self-hosted",
+        "open-models",
+        "ai-infrastructure",
+        "privacy",
+        "rust",
+        "ocr",
+        "computer-vision",
+        "document-processing",
+        "paddleocr"
+      ]
+    },
+    {
+      "slug": "voice",
+      "repository": "impossible-voice",
+      "localDirectory": "impossible-voice",
+      "name": "Voice",
+      "accent": "#6f37ff",
+      "kicker": "SPEECH ↔ LANGUAGE",
+      "statement": "Give software a voice and an ear.",
+      "description": "Ready-made local speech-to-text and text-to-speech infrastructure.",
+      "topics": [
+        "local-ai",
+        "self-hosted",
+        "open-models",
+        "ai-infrastructure",
+        "privacy",
+        "rust",
+        "speech-to-text",
+        "text-to-speech",
+        "websocket",
+        "audio"
+      ]
+    },
+    {
+      "slug": "inference",
+      "repository": "impossible-inference",
+      "localDirectory": "impossible-inferences",
+      "name": "Inference",
+      "accent": "#f4f0e8",
+      "kicker": "MODELS → LANGUAGE",
+      "statement": "Run intelligence on your own terms.",
+      "description": "Ready-made local infrastructure for streaming text generation with open models.",
+      "topics": [
+        "local-ai",
+        "self-hosted",
+        "open-models",
+        "ai-infrastructure",
+        "privacy",
+        "rust",
+        "llm",
+        "text-generation",
+        "llama-cpp",
+        "streaming"
+      ]
+    }
+  ]
+}

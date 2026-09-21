@@ -1,0 +1,24 @@
+name: Proposal
+description: Propose a focused improvement to an Impossible G server
+title: "proposal: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What concrete limitation or workflow should change?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the smallest useful contract.
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Operational and compatibility considerations
+      description: Note security, privacy, resource, protocol, or migration effects.
