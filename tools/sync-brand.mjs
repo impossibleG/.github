@@ -1,4 +1,4 @@
-import { copyFile, mkdir, readFile } from "node:fs/promises";
+import { access, copyFile, mkdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -9,7 +9,15 @@ const manifest = JSON.parse(await readFile(path.join(root, "brand", "manifest.js
 
 for (const service of manifest.services) {
   const source = path.join(root, "brand", "services", service.slug);
-  const destination = path.join(workspace, service.localDirectory, "docs", "assets");
+  const checkout = path.join(workspace, service.localDirectory);
+  try {
+    await access(checkout);
+  } catch {
+    console.error(`missing ${checkout}; clone ${service.repository} there or pass --workspace`);
+    process.exitCode = 1;
+    continue;
+  }
+  const destination = path.join(checkout, "docs", "assets");
   const extension = service.slug === "embedding" || service.slug === "voice" ? "gif" : "png";
   await mkdir(destination, { recursive: true });
   await copyFile(
