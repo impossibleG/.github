@@ -17,7 +17,7 @@
     {
       "slug": "embedding",
       "repository": "impossible-embeddings",
-      "localDirectory": "impossible-embedding",
+      "localDirectory": "impossible-embeddings",
       "name": "Embedding",
       "accent": "#15dbe1",
       "kicker": "LANGUAGE → MEANING",
@@ -83,7 +83,7 @@
     {
       "slug": "inference",
       "repository": "impossible-inference",
-      "localDirectory": "impossible-inferences",
+      "localDirectory": "impossible-inference",
       "name": "Inference",
       "accent": "#f4f0e8",
       "kicker": "MODELS → LANGUAGE",
