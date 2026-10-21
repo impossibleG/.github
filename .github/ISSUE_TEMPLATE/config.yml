@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
   - name: Security report
-    url: https://github.com/impossibleG/.github/security/advisories/new
-    about: Report vulnerabilities privately
+    url: https://github.com/impossibleG/.github/blob/main/SECURITY.md
+    about: Report vulnerabilities privately through the affected repository's Security tab
